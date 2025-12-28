@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Server } from "lucide-react";
+import { Menu, X, Cloud } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,9 +32,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 group">
             <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-              <Server className="w-5 h-5 text-primary" />
+              <Cloud className="w-5 h-5 text-primary" />
             </div>
-            <span className="text-xl font-bold gradient-text">NexusHost</span>
+            <span className="text-xl font-bold gradient-text">x69bits</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,8 +54,8 @@ const Navbar = () => {
               </Link>
             ))}
             <Button variant="hero" size="sm" asChild>
-              <a href="https://panel.example.com" target="_blank" rel="noopener noreferrer">
-                Panel Login
+              <a href="https://panel.x69bits.com" target="_blank" rel="noopener noreferrer">
+                Client Portal
               </a>
             </Button>
           </div>
@@ -89,8 +89,8 @@ const Navbar = () => {
                 </Link>
               ))}
               <Button variant="hero" size="sm" className="mt-2" asChild>
-                <a href="https://panel.example.com" target="_blank" rel="noopener noreferrer">
-                  Panel Login
+                <a href="https://panel.x69bits.com" target="_blank" rel="noopener noreferrer">
+                  Client Portal
                 </a>
               </Button>
             </div>

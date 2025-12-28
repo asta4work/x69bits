@@ -6,49 +6,49 @@ import {
   HardDrive, 
   Headphones,
   Globe,
-  RefreshCw
+  Lock
 } from "lucide-react";
 
 const features = [
   {
     icon: Server,
     title: "Pterodactyl Panel",
-    description: "Industry-leading control panel with full FTP access, file manager, and console.",
+    description: "Full server control with FTP access, file manager, console, and resource monitoring.",
   },
   {
     icon: Shield,
     title: "DDoS Protection",
-    description: "Enterprise-grade protection against attacks up to 1Tbps included free.",
+    description: "Enterprise-grade mitigation against attacks up to 1Tbps included with every plan.",
   },
   {
     icon: Zap,
-    title: "Instant Setup",
-    description: "Your server is deployed and ready within seconds of payment.",
+    title: "Instant Deployment",
+    description: "Your server is provisioned and ready within seconds of payment confirmation.",
   },
   {
     icon: Clock,
-    title: "99.9% Uptime",
-    description: "Guaranteed uptime with automatic failover and redundancy.",
+    title: "99.9% Uptime SLA",
+    description: "Guaranteed uptime backed by service credits and automatic failover systems.",
   },
   {
     icon: HardDrive,
-    title: "NVMe Storage",
-    description: "Ultra-fast NVMe SSDs for blazing load times and performance.",
+    title: "NVMe SSD Storage",
+    description: "Ultra-fast NVMe drives for blazing database queries and application performance.",
   },
   {
     icon: Headphones,
-    title: "24/7 Support",
-    description: "Expert support team available around the clock via ticket system.",
+    title: "24/7 Expert Support",
+    description: "Technical specialists available around the clock via ticket and live chat.",
   },
   {
     icon: Globe,
     title: "Global Network",
-    description: "Multiple datacenter locations for optimal latency worldwide.",
+    description: "Strategic datacenter locations for optimal latency to your customers worldwide.",
   },
   {
-    icon: RefreshCw,
-    title: "Auto Backups",
-    description: "Daily automatic backups with one-click restore functionality.",
+    icon: Lock,
+    title: "Secure Infrastructure",
+    description: "SSL certificates, firewalls, and automated backups to protect your business.",
   },
 ];
 
@@ -60,11 +60,11 @@ const Features = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Why Choose <span className="gradient-text">NexusHost</span>?
+            Why Choose <span className="gradient-text">x69bits</span>?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            We provide everything you need for a seamless gaming experience with 
-            enterprise-grade infrastructure at affordable prices.
+            Enterprise infrastructure designed for businesses that demand reliability, 
+            performance, and scalability without the enterprise price tag.
           </p>
         </div>
 

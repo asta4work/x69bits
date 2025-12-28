@@ -3,49 +3,54 @@ import { Button } from "@/components/ui/button";
 
 const plans = [
   {
-    name: "Starter",
-    price: "4.99",
-    description: "Perfect for small communities",
+    name: "Starter VPS",
+    price: "9.99",
+    description: "Perfect for small projects & websites",
     features: [
-      "2 GB RAM",
-      "20 GB NVMe Storage",
-      "1 Server Slot",
+      "2 vCPU Cores",
+      "4 GB RAM",
+      "50 GB NVMe Storage",
+      "2 TB Bandwidth",
+      "1 IPv4 Address",
       "Pterodactyl Panel",
       "DDoS Protection",
-      "24/7 Support",
     ],
     paypalButtonId: "YOUR_STARTER_BUTTON_ID",
     popular: false,
   },
   {
-    name: "Performance",
-    price: "9.99",
-    description: "Best for growing communities",
+    name: "Business VPS",
+    price: "24.99",
+    description: "Ideal for growing businesses",
     features: [
-      "4 GB RAM",
-      "50 GB NVMe Storage",
-      "2 Server Slots",
+      "4 vCPU Cores",
+      "8 GB RAM",
+      "100 GB NVMe Storage",
+      "5 TB Bandwidth",
+      "1 IPv4 Address",
       "Pterodactyl Panel",
       "DDoS Protection",
       "Priority Support",
       "Daily Backups",
     ],
-    paypalButtonId: "YOUR_PERFORMANCE_BUTTON_ID",
+    paypalButtonId: "YOUR_BUSINESS_BUTTON_ID",
     popular: true,
   },
   {
-    name: "Enterprise",
-    price: "19.99",
-    description: "For large gaming networks",
+    name: "Enterprise VPS",
+    price: "49.99",
+    description: "For high-traffic applications",
     features: [
-      "8 GB RAM",
-      "100 GB NVMe Storage",
-      "5 Server Slots",
+      "8 vCPU Cores",
+      "16 GB RAM",
+      "200 GB NVMe Storage",
+      "10 TB Bandwidth",
+      "2 IPv4 Addresses",
       "Pterodactyl Panel",
       "DDoS Protection",
       "Premium Support",
       "Daily Backups",
-      "Custom Domain",
+      "Free SSL Certificates",
     ],
     paypalButtonId: "YOUR_ENTERPRISE_BUTTON_ID",
     popular: false,
@@ -55,7 +60,6 @@ const plans = [
 const Pricing = () => {
   const handlePayPalClick = (buttonId: string, planName: string) => {
     // Replace with your actual PayPal button integration
-    // This opens PayPal checkout - replace URL with your hosted button URL
     window.open(
       `https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=${buttonId}`,
       "_blank"
@@ -70,12 +74,12 @@ const Pricing = () => {
             Simple, <span className="gradient-text">Transparent</span> Pricing
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            No hidden fees. Cancel anytime. All plans include our full feature set.
+            No hidden fees, no surprises. Scale up or down anytime. All plans include our full feature set.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {plans.map((plan, index) => (
+          {plans.map((plan) => (
             <div
               key={plan.name}
               className={`relative p-8 rounded-2xl transition-all duration-300 hover-lift ${
@@ -126,7 +130,7 @@ const Pricing = () => {
 
         <p className="text-center text-sm text-muted-foreground mt-8">
           All payments are securely processed through PayPal. 
-          Servers are activated instantly after payment confirmation.
+          Servers are deployed instantly after payment confirmation.
         </p>
       </div>
     </section>

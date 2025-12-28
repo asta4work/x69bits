@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Server, Mail, MessageCircle } from "lucide-react";
+import { Cloud, Mail, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,24 +10,24 @@ const Footer = () => {
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="p-2 rounded-lg bg-primary/10">
-                <Server className="w-5 h-5 text-primary" />
+                <Cloud className="w-5 h-5 text-primary" />
               </div>
-              <span className="text-xl font-bold gradient-text">NexusHost</span>
+              <span className="text-xl font-bold gradient-text">x69bits</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-sm mb-4">
-              Premium game server hosting powered by Pterodactyl Panel. 
-              Fast, reliable, and affordable hosting for gamers worldwide.
+              Enterprise-grade VPS and cloud hosting powered by Pterodactyl Panel. 
+              Fast, reliable, and scalable infrastructure for businesses worldwide.
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="mailto:support@example.com"
+                href="mailto:support@x69bits.com"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                support@example.com
+                support@x69bits.com
               </a>
               <a
-                href="https://discord.gg/example"
+                href="https://discord.gg/x69bits"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -54,12 +54,12 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://panel.example.com" 
+                  href="https://panel.x69bits.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Control Panel
+                  Client Portal
                 </a>
               </li>
             </ul>
@@ -85,7 +85,7 @@ const Footer = () => {
 
         <div className="border-t border-border/50 mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} NexusHost. All rights reserved.
+            © {new Date().getFullYear()} x69bits.com. All rights reserved.
           </p>
         </div>
       </div>

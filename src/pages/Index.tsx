@@ -9,12 +9,12 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>NexusHost - Premium Game Server Hosting | Pterodactyl Panel</title>
+        <title>x69bits - Enterprise VPS & Cloud Hosting | Pterodactyl Panel</title>
         <meta 
           name="description" 
-          content="Deploy your game servers in seconds with NexusHost. Enterprise-grade performance, DDoS protection, and 24/7 support. Powered by Pterodactyl Panel." 
+          content="Deploy VPS and cloud servers in seconds with x69bits. Enterprise-grade performance, DDoS protection, and 24/7 support. Powered by Pterodactyl Panel." 
         />
-        <meta name="keywords" content="game server hosting, pterodactyl, minecraft hosting, game hosting, ddos protection" />
+        <meta name="keywords" content="vps hosting, cloud hosting, pterodactyl, business hosting, enterprise servers, ddos protection" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
