@@ -6,8 +6,8 @@ const Terms = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service | NexusHost</title>
-        <meta name="description" content="Read our Terms of Service to understand the rules and guidelines for using NexusHost game server hosting services." />
+        <title>Terms of Service | x69bits</title>
+        <meta name="description" content="Read our Terms of Service to understand the rules and guidelines for using x69bits VPS and cloud hosting services." />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -27,7 +27,7 @@ const Terms = () => {
               <section className="glass p-6 rounded-xl">
                 <h2 className="text-xl font-semibold mb-4">1. Acceptance of Terms</h2>
                 <p className="text-muted-foreground">
-                  By accessing or using NexusHost services, you agree to be bound by these Terms of Service. 
+                  By accessing or using x69bits services, you agree to be bound by these Terms of Service. 
                   If you do not agree to these terms, please do not use our services.
                 </p>
               </section>
@@ -35,9 +35,9 @@ const Terms = () => {
               <section className="glass p-6 rounded-xl">
                 <h2 className="text-xl font-semibold mb-4">2. Service Description</h2>
                 <p className="text-muted-foreground">
-                  NexusHost provides game server hosting services powered by Pterodactyl Panel. 
-                  We offer virtual private servers, dedicated resources, and management tools for 
-                  hosting game servers and related applications.
+                  x69bits provides VPS hosting, cloud infrastructure, and dedicated server services powered by Pterodactyl Panel. 
+                  We offer virtual private servers, managed resources, and comprehensive management tools for 
+                  hosting business applications, websites, and related services.
                 </p>
               </section>
 
@@ -47,29 +47,31 @@ const Terms = () => {
                   You agree not to use our services for:
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                  <li>Any illegal activities or content</li>
-                  <li>Distribution of malware or harmful software</li>
-                  <li>DDoS attacks or network abuse</li>
+                  <li>Any illegal activities or hosting illegal content</li>
+                  <li>Distribution of malware, viruses, or harmful software</li>
+                  <li>DDoS attacks, port scanning, or network abuse</li>
                   <li>Hosting pirated content or copyright infringement</li>
                   <li>Spamming, phishing, or fraudulent activities</li>
-                  <li>Any activity that violates game publisher terms of service</li>
+                  <li>Cryptocurrency mining without prior approval</li>
+                  <li>Any activity that degrades service for other customers</li>
                 </ul>
               </section>
 
               <section className="glass p-6 rounded-xl">
                 <h2 className="text-xl font-semibold mb-4">4. Payment Terms</h2>
                 <p className="text-muted-foreground">
-                  All payments are processed through PayPal. Services are provided on a prepaid basis. 
-                  Refunds may be issued within 24 hours of purchase if no resources have been utilized. 
-                  After this period, refunds are at our sole discretion.
+                  All payments are processed through PayPal. Services are provided on a prepaid monthly basis. 
+                  Refunds may be issued within 48 hours of purchase if no significant resources have been utilized. 
+                  After this period, refunds are at our sole discretion. Late payments may result in service suspension.
                 </p>
               </section>
 
               <section className="glass p-6 rounded-xl">
                 <h2 className="text-xl font-semibold mb-4">5. Service Level Agreement</h2>
                 <p className="text-muted-foreground">
-                  We strive for 99.9% uptime. In the event of extended downtime beyond our control, 
-                  service credits may be issued proportional to the downtime experienced.
+                  We guarantee 99.9% network uptime. In the event of downtime exceeding this threshold, 
+                  service credits will be issued proportional to the downtime experienced, up to one month 
+                  of service credit. Scheduled maintenance windows are excluded from uptime calculations.
                 </p>
               </section>
 
@@ -78,22 +80,31 @@ const Terms = () => {
                 <p className="text-muted-foreground">
                   We reserve the right to suspend or terminate accounts that violate these terms 
                   without prior notice. Users may cancel their service at any time through the 
-                  control panel.
+                  client portal. Data will be retained for 7 days after cancellation.
                 </p>
               </section>
 
               <section className="glass p-6 rounded-xl">
                 <h2 className="text-xl font-semibold mb-4">7. Limitation of Liability</h2>
                 <p className="text-muted-foreground">
-                  NexusHost shall not be liable for any indirect, incidental, special, or 
+                  x69bits shall not be liable for any indirect, incidental, special, or 
                   consequential damages resulting from the use or inability to use our services. 
                   Our total liability shall not exceed the amount paid for services in the 
-                  preceding month.
+                  preceding three months.
                 </p>
               </section>
 
               <section className="glass p-6 rounded-xl">
-                <h2 className="text-xl font-semibold mb-4">8. Modifications</h2>
+                <h2 className="text-xl font-semibold mb-4">8. Data Backup Responsibility</h2>
+                <p className="text-muted-foreground">
+                  While we provide backup services on select plans, customers are ultimately 
+                  responsible for maintaining their own backups. x69bits is not liable for 
+                  data loss due to hardware failure, user error, or security breaches.
+                </p>
+              </section>
+
+              <section className="glass p-6 rounded-xl">
+                <h2 className="text-xl font-semibold mb-4">9. Modifications</h2>
                 <p className="text-muted-foreground">
                   We reserve the right to modify these terms at any time. Changes will be 
                   effective upon posting to our website. Continued use of services constitutes 
@@ -102,11 +113,11 @@ const Terms = () => {
               </section>
 
               <section className="glass p-6 rounded-xl">
-                <h2 className="text-xl font-semibold mb-4">9. Contact</h2>
+                <h2 className="text-xl font-semibold mb-4">10. Contact</h2>
                 <p className="text-muted-foreground">
                   For questions about these Terms of Service, please contact us at{" "}
-                  <a href="mailto:support@example.com" className="text-primary hover:underline">
-                    support@example.com
+                  <a href="mailto:legal@x69bits.com" className="text-primary hover:underline">
+                    legal@x69bits.com
                   </a>
                 </p>
               </section>

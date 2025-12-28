@@ -6,8 +6,8 @@ const Privacy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | NexusHost</title>
-        <meta name="description" content="Learn how NexusHost collects, uses, and protects your personal information in our Privacy Policy." />
+        <title>Privacy Policy | x69bits</title>
+        <meta name="description" content="Learn how x69bits collects, uses, and protects your personal information in our Privacy Policy." />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -32,6 +32,7 @@ const Privacy = () => {
                 <ul className="list-disc list-inside text-muted-foreground space-y-2">
                   <li>Account information (email, username, password)</li>
                   <li>Billing information (processed securely through PayPal)</li>
+                  <li>Business contact details (company name, address if applicable)</li>
                   <li>Support communications and tickets</li>
                   <li>Server configuration and usage data</li>
                 </ul>
@@ -45,7 +46,7 @@ const Privacy = () => {
                 <ul className="list-disc list-inside text-muted-foreground space-y-2">
                   <li>IP addresses and access logs</li>
                   <li>Browser type and device information</li>
-                  <li>Server performance metrics</li>
+                  <li>Server performance and resource metrics</li>
                   <li>Cookies and similar technologies for session management</li>
                 </ul>
               </section>
@@ -56,11 +57,11 @@ const Privacy = () => {
                   We use collected information to:
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                  <li>Provide and maintain our hosting services</li>
+                  <li>Provision and maintain our hosting services</li>
                   <li>Process payments and prevent fraud</li>
-                  <li>Send service updates and security alerts</li>
-                  <li>Respond to support requests</li>
-                  <li>Improve our services and user experience</li>
+                  <li>Send service updates, billing notices, and security alerts</li>
+                  <li>Respond to support requests and inquiries</li>
+                  <li>Improve our services and infrastructure</li>
                   <li>Comply with legal obligations</li>
                 </ul>
               </section>
@@ -72,7 +73,7 @@ const Privacy = () => {
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2 mt-4">
                   <li>Payment processors (PayPal) for transaction handling</li>
-                  <li>Infrastructure providers necessary for service delivery</li>
+                  <li>Infrastructure and datacenter providers for service delivery</li>
                   <li>Law enforcement when required by valid legal process</li>
                 </ul>
               </section>
@@ -80,9 +81,9 @@ const Privacy = () => {
               <section className="glass p-6 rounded-xl">
                 <h2 className="text-xl font-semibold mb-4">5. Data Security</h2>
                 <p className="text-muted-foreground">
-                  We implement industry-standard security measures including encryption, 
-                  firewalls, and access controls. However, no system is completely secure, 
-                  and we cannot guarantee absolute security of your data.
+                  We implement industry-standard security measures including TLS encryption, 
+                  firewalls, intrusion detection, and strict access controls. However, no system 
+                  is completely secure, and we cannot guarantee absolute security of your data.
                 </p>
               </section>
 
@@ -90,9 +91,9 @@ const Privacy = () => {
                 <h2 className="text-xl font-semibold mb-4">6. Data Retention</h2>
                 <p className="text-muted-foreground">
                   We retain your data for as long as your account is active or as needed 
-                  to provide services. After account deletion, we may retain certain 
+                  to provide services. After account termination, we may retain certain 
                   information for legal, accounting, or security purposes for up to 
-                  90 days.
+                  90 days. Server data is deleted 7 days after account cancellation.
                 </p>
               </section>
 
@@ -120,11 +121,11 @@ const Privacy = () => {
               </section>
 
               <section className="glass p-6 rounded-xl">
-                <h2 className="text-xl font-semibold mb-4">9. Children's Privacy</h2>
+                <h2 className="text-xl font-semibold mb-4">9. International Data Transfers</h2>
                 <p className="text-muted-foreground">
-                  Our services are not intended for children under 13. We do not knowingly 
-                  collect information from children under 13. If you believe we have 
-                  collected such information, please contact us immediately.
+                  Your data may be processed in countries outside your residence. We ensure 
+                  appropriate safeguards are in place for international transfers in compliance 
+                  with applicable data protection laws.
                 </p>
               </section>
 
@@ -140,8 +141,8 @@ const Privacy = () => {
                 <h2 className="text-xl font-semibold mb-4">11. Contact Us</h2>
                 <p className="text-muted-foreground">
                   For privacy-related questions or requests, contact us at{" "}
-                  <a href="mailto:privacy@example.com" className="text-primary hover:underline">
-                    privacy@example.com
+                  <a href="mailto:privacy@x69bits.com" className="text-primary hover:underline">
+                    privacy@x69bits.com
                   </a>
                 </p>
               </section>
