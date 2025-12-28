@@ -1,13 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Features from "@/components/Features";
+import Pricing from "@/components/Pricing";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>NexusHost - Premium Game Server Hosting | Pterodactyl Panel</title>
+        <meta 
+          name="description" 
+          content="Deploy your game servers in seconds with NexusHost. Enterprise-grade performance, DDoS protection, and 24/7 support. Powered by Pterodactyl Panel." 
+        />
+        <meta name="keywords" content="game server hosting, pterodactyl, minecraft hosting, game hosting, ddos protection" />
+      </Helmet>
+
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        <main>
+          <Hero />
+          <Features />
+          <Pricing />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
