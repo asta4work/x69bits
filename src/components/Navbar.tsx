@@ -2,17 +2,20 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Cloud } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, dir } = useLanguage();
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Pricing", path: "/#pricing" },
-    { name: "Features", path: "/#features" },
-    { name: "Terms", path: "/terms" },
-    { name: "Privacy", path: "/privacy" },
+    { name: t.nav.home, path: "/" },
+    { name: t.nav.pricing, path: "/#pricing" },
+    { name: t.nav.features, path: "/#features" },
+    { name: t.nav.terms, path: "/terms" },
+    { name: t.nav.privacy, path: "/privacy" },
   ];
 
   const handleNavClick = (path: string) => {
@@ -38,7 +41,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className={`hidden md:flex items-center gap-6 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -53,21 +56,25 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+            <LanguageSwitcher />
             <Button variant="hero" size="sm" asChild>
               <a href="https://panel.x69bits.com" target="_blank" rel="noopener noreferrer">
-                Client Portal
+                {t.nav.clientPortal}
               </a>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 rounded-lg hover:bg-secondary transition-colors"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSwitcher />
+            <button
+              className="p-2 rounded-lg hover:bg-secondary transition-colors"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -90,7 +97,7 @@ const Navbar = () => {
               ))}
               <Button variant="hero" size="sm" className="mt-2" asChild>
                 <a href="https://panel.x69bits.com" target="_blank" rel="noopener noreferrer">
-                  Client Portal
+                  {t.nav.clientPortal}
                 </a>
               </Button>
             </div>
