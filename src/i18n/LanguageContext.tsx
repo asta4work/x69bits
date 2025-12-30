@@ -16,11 +16,12 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     if (saved && (saved === "en" || saved === "ar" || saved === "de")) {
       return saved as Language;
     }
-    // Detect browser language
-    const browserLang = navigator.language.split("-")[0];
-    if (browserLang === "ar") return "ar";
+    // Detect browser language - default to Arabic unless clearly English/German
+    const browserLang = navigator.language.split("-")[0].toLowerCase();
+    if (browserLang === "en") return "en";
     if (browserLang === "de") return "de";
-    return "en";
+    // Default to Arabic for all other languages
+    return "ar";
   });
 
   const t = translations[language];
