@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Shield, Globe } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Hero = () => {
+  const { t, dir } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
       {/* Background Effects */}
@@ -9,8 +12,8 @@ const Hero = () => {
       <div className="absolute inset-0 grid-pattern opacity-30" />
       
       {/* Floating orbs */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+      <div className={`absolute top-1/4 ${dir === "rtl" ? "right-1/4" : "left-1/4"} w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float`} />
+      <div className={`absolute bottom-1/4 ${dir === "rtl" ? "left-1/4" : "right-1/4"} w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float`} style={{ animationDelay: "2s" }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -18,32 +21,31 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border-primary/20 mb-8 animate-fade-in-up">
             <Zap className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-muted-foreground">
-              Enterprise-Grade Infrastructure
+              {t.hero.badge}
             </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up animate-delay-100">
-            Business Hosting
-            <span className="block gradient-text glow-text">Built to Scale</span>
+            {t.hero.title1}
+            <span className="block gradient-text glow-text">{t.hero.title2}</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up animate-delay-200">
-            Deploy VPS, dedicated servers, and cloud infrastructure in seconds. 
-            Enterprise performance with 99.9% uptime SLA, DDoS protection, and 24/7 expert support.
+            {t.hero.subtitle}
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in-up animate-delay-300">
+          <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in-up animate-delay-300 ${dir === "rtl" ? "sm:flex-row-reverse" : ""}`}>
             <Button variant="hero" size="xl" asChild>
-              <a href="#pricing">
-                View Plans
-                <ArrowRight className="w-5 h-5 ml-1" />
+              <a href="#pricing" className="flex items-center gap-1">
+                {t.hero.viewPlans}
+                <ArrowRight className={`w-5 h-5 ${dir === "rtl" ? "rotate-180" : ""}`} />
               </a>
             </Button>
             <Button variant="glass" size="xl" asChild>
-              <a href="#features">Why x69bits</a>
+              <a href="#features">{t.hero.whyUs}</a>
             </Button>
           </div>
 
@@ -54,21 +56,21 @@ const Hero = () => {
                 <Globe className="w-5 h-5 text-primary" />
                 <span className="text-2xl md:text-3xl font-bold">99.9%</span>
               </div>
-              <p className="text-sm text-muted-foreground">Uptime SLA</p>
+              <p className="text-sm text-muted-foreground">{t.hero.uptimeSLA}</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Shield className="w-5 h-5 text-primary" />
                 <span className="text-2xl md:text-3xl font-bold">DDoS</span>
               </div>
-              <p className="text-sm text-muted-foreground">Protection</p>
+              <p className="text-sm text-muted-foreground">{t.hero.protection}</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Zap className="w-5 h-5 text-primary" />
                 <span className="text-2xl md:text-3xl font-bold">NVMe</span>
               </div>
-              <p className="text-sm text-muted-foreground">SSD Storage</p>
+              <p className="text-sm text-muted-foreground">{t.hero.ssdStorage}</p>
             </div>
           </div>
         </div>
