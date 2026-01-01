@@ -109,7 +109,7 @@ export const translations: Record<Language, Translation> = {
       title2: "x69bits",
       subtitle: "Enterprise infrastructure designed for businesses that demand reliability, performance, and scalability without the enterprise price tag.",
       items: [
-        { title: "Pterodactyl Panel", description: "Full server control with FTP access, file manager, console, and resource monitoring." },
+        { title: "Control Panel", description: "Full server control with FTP access, file manager, console, and resource monitoring." },
         { title: "DDoS Protection", description: "Enterprise-grade mitigation against attacks up to 1Tbps included with every plan." },
         { title: "Instant Deployment", description: "Your server is provisioned and ready within seconds of payment confirmation." },
         { title: "99.9% Uptime SLA", description: "Guaranteed uptime backed by service credits and automatic failover systems." },
@@ -134,14 +134,14 @@ export const translations: Record<Language, Translation> = {
         { name: "Enterprise VPS", description: "For high-traffic applications" },
       ],
       features: [
-        "2 vCPU Cores", "4 GB RAM", "50 GB NVMe Storage", "2 TB Bandwidth", "1 IPv4 Address", "Pterodactyl Panel", "DDoS Protection",
+        "2 vCPU Cores", "4 GB RAM", "50 GB NVMe Storage", "2 TB Bandwidth", "1 IPv4 Address", "Control Panel", "DDoS Protection",
         "4 vCPU Cores", "8 GB RAM", "100 GB NVMe Storage", "5 TB Bandwidth", "Priority Support", "Daily Backups",
         "8 vCPU Cores", "16 GB RAM", "200 GB NVMe Storage", "10 TB Bandwidth", "2 IPv4 Addresses", "Premium Support", "Free SSL Certificates",
       ],
     },
     
     footer: {
-      description: "Enterprise-grade VPS and cloud hosting powered by Pterodactyl Panel. Fast, reliable, and scalable infrastructure for businesses worldwide.",
+      description: "Enterprise-grade VPS and cloud hosting with powerful control panel. Fast, reliable, and scalable infrastructure for businesses worldwide.",
       quickLinks: "Quick Links",
       legal: "Legal",
       termsOfService: "Terms of Service",
@@ -150,8 +150,8 @@ export const translations: Record<Language, Translation> = {
     },
     
     seo: {
-      homeTitle: "x69bits - Enterprise VPS & Cloud Hosting | Pterodactyl Panel",
-      homeDescription: "Deploy VPS and cloud servers in seconds with x69bits. Enterprise-grade performance, DDoS protection, and 24/7 support. Powered by Pterodactyl Panel.",
+      homeTitle: "x69bits - Enterprise VPS & Cloud Hosting | Yemen Business Hosting",
+      homeDescription: "Deploy VPS and cloud servers in seconds with x69bits. Enterprise-grade performance, DDoS protection, and 24/7 support for businesses in Yemen and beyond.",
       termsTitle: "Terms of Service | x69bits",
       termsDescription: "Read our terms of service for VPS and cloud hosting at x69bits.",
       privacyTitle: "Privacy Policy | x69bits",
@@ -190,7 +190,7 @@ export const translations: Record<Language, Translation> = {
       title2: "x69bits",
       subtitle: "بنية تحتية احترافية مصممة خصيصاً للشركات اليمنية والعربية التي تتطلب الموثوقية والأداء العالي وقابلية التوسع بأسعار منافسة.",
       items: [
-        { title: "لوحة Pterodactyl", description: "تحكم كامل في الخادم مع وصول FTP ومدير الملفات ووحدة التحكم ومراقبة الموارد." },
+        { title: "لوحة التحكم", description: "تحكم كامل في الخادم مع وصول FTP ومدير الملفات ووحدة التحكم ومراقبة الموارد." },
         { title: "حماية DDoS", description: "حماية على مستوى المؤسسات ضد الهجمات حتى 1 تيرابت في الثانية مضمنة مع كل خطة." },
         { title: "نشر فوري", description: "خادمك جاهز ومُعد خلال ثوانٍ من تأكيد الدفع." },
         { title: "ضمان وقت تشغيل 99.9%", description: "وقت تشغيل مضمون مدعوم برصيد الخدمة وأنظمة تجاوز الفشل التلقائية." },
@@ -215,14 +215,14 @@ export const translations: Record<Language, Translation> = {
         { name: "VPS للمؤسسات", description: "للتطبيقات عالية الحركة" },
       ],
       features: [
-        "2 نوى vCPU", "4 جيجا رام", "50 جيجا تخزين NVMe", "2 تيرا عرض نطاق", "1 عنوان IPv4", "لوحة Pterodactyl", "حماية DDoS",
+        "2 نوى vCPU", "4 جيجا رام", "50 جيجا تخزين NVMe", "2 تيرا عرض نطاق", "1 عنوان IPv4", "لوحة التحكم", "حماية DDoS",
         "4 نوى vCPU", "8 جيجا رام", "100 جيجا تخزين NVMe", "5 تيرا عرض نطاق", "دعم ذو أولوية", "نسخ احتياطية يومية",
         "8 نوى vCPU", "16 جيجا رام", "200 جيجا تخزين NVMe", "10 تيرا عرض نطاق", "2 عنوان IPv4", "دعم متميز", "شهادات SSL مجانية",
       ],
     },
     
     footer: {
-      description: "استضافة VPS وسحابية على مستوى المؤسسات مدعومة بلوحة Pterodactyl. بنية تحتية سريعة وموثوقة وقابلة للتوسع للشركات في جميع أنحاء العالم.",
+      description: "استضافة VPS وسحابية على مستوى المؤسسات مع لوحة تحكم متطورة. بنية تحتية سريعة وموثوقة وقابلة للتوسع للشركات في جميع أنحاء العالم.",
       quickLinks: "روابط سريعة",
       legal: "قانوني",
       termsOfService: "شروط الخدمة",
@@ -271,7 +271,7 @@ export const translations: Record<Language, Translation> = {
       title2: "x69bits wählen",
       subtitle: "Enterprise-Infrastruktur für Unternehmen, die Zuverlässigkeit, Leistung und Skalierbarkeit verlangen - ohne Enterprise-Preise.",
       items: [
-        { title: "Pterodactyl Panel", description: "Volle Serverkontrolle mit FTP-Zugang, Dateimanager, Konsole und Ressourcenüberwachung." },
+        { title: "Control Panel", description: "Volle Serverkontrolle mit FTP-Zugang, Dateimanager, Konsole und Ressourcenüberwachung." },
         { title: "DDoS-Schutz", description: "Enterprise-Schutz gegen Angriffe bis zu 1 Tbps in jedem Plan inklusive." },
         { title: "Sofortige Bereitstellung", description: "Ihr Server ist innerhalb von Sekunden nach Zahlungsbestätigung einsatzbereit." },
         { title: "99,9% Uptime-SLA", description: "Garantierte Uptime mit Service-Credits und automatischen Failover-Systemen." },
@@ -296,14 +296,14 @@ export const translations: Record<Language, Translation> = {
         { name: "Enterprise VPS", description: "Für Anwendungen mit hohem Traffic" },
       ],
       features: [
-        "2 vCPU-Kerne", "4 GB RAM", "50 GB NVMe-Speicher", "2 TB Bandbreite", "1 IPv4-Adresse", "Pterodactyl Panel", "DDoS-Schutz",
+        "2 vCPU-Kerne", "4 GB RAM", "50 GB NVMe-Speicher", "2 TB Bandbreite", "1 IPv4-Adresse", "Control Panel", "DDoS-Schutz",
         "4 vCPU-Kerne", "8 GB RAM", "100 GB NVMe-Speicher", "5 TB Bandbreite", "Prioritäts-Support", "Tägliche Backups",
         "8 vCPU-Kerne", "16 GB RAM", "200 GB NVMe-Speicher", "10 TB Bandbreite", "2 IPv4-Adressen", "Premium-Support", "Kostenlose SSL-Zertifikate",
       ],
     },
     
     footer: {
-      description: "Enterprise-VPS und Cloud-Hosting mit Pterodactyl Panel. Schnelle, zuverlässige und skalierbare Infrastruktur für Unternehmen weltweit.",
+      description: "Enterprise-VPS und Cloud-Hosting mit leistungsstarkem Control Panel. Schnelle, zuverlässige und skalierbare Infrastruktur für Unternehmen weltweit.",
       quickLinks: "Schnelllinks",
       legal: "Rechtliches",
       termsOfService: "Nutzungsbedingungen",
@@ -312,8 +312,8 @@ export const translations: Record<Language, Translation> = {
     },
     
     seo: {
-      homeTitle: "x69bits - Enterprise VPS & Cloud Hosting | Pterodactyl Panel",
-      homeDescription: "Stellen Sie VPS und Cloud-Server in Sekunden mit x69bits bereit. Enterprise-Leistung, DDoS-Schutz und 24/7-Support.",
+      homeTitle: "x69bits - Enterprise VPS & Cloud Hosting | Yemen Business Hosting",
+      homeDescription: "Stellen Sie VPS und Cloud-Server in Sekunden mit x69bits bereit. Enterprise-Leistung, DDoS-Schutz und 24/7-Support für Unternehmen.",
       termsTitle: "Nutzungsbedingungen | x69bits",
       termsDescription: "Lesen Sie unsere Nutzungsbedingungen für VPS und Cloud-Hosting bei x69bits.",
       privacyTitle: "Datenschutzrichtlinie | x69bits",
