@@ -26,8 +26,8 @@ const planConfigs = [
 const Pricing = () => {
   const { t, dir } = useLanguage();
 
-  const handlePayPalClick = (buttonId: string) => {
-    window.open(`https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=${buttonId}`, "_blank");
+  const handlePayPalClick = () => {
+    window.open("https://www.paypal.com/ncp/payment/WE3QPH9SAEYP4", "_blank");
   };
 
   const allFeatures = t.pricing.features;
@@ -108,7 +108,7 @@ const Pricing = () => {
                   variant={config.popular ? "hero" : "glass"}
                   size="lg"
                   className={`w-full group ${config.popular ? "" : "hover:border-primary/50"}`}
-                  onClick={() => handlePayPalClick(config.paypalButtonId)}
+                  onClick={() => handlePayPalClick()}
                 >
                   <svg
                     className={`w-5 h-5 ${dir === "rtl" ? "ml-2" : "mr-2"} group-hover:scale-110 transition-transform`}
